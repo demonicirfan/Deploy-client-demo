@@ -9,7 +9,7 @@
     "build": "react-scripts build"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": "16.11.1"
   },
   "dependencies": {
     "axios": "^0.24.0",
