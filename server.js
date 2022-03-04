@@ -3,15 +3,14 @@ const app = express()
 const ejs = require('ejs')
 const expressLayout = require('express-ejs-layouts')
 const path = require('path')
-const PORT = process.env.PORT || 3000
 
 const mongoose = require('mongoose')
 const session = require('express-session')
 const MongoDbStore = require('connect-mongo')
 
 const flash = require('express-flash')
-require('dotenv').config()
 const passport = require('passport')
+require('dotenv').config()
 
  //DB
 mongoose.connect(process.env.URL, { useNewUrlParser: true, useUnifiedTopology: true});
@@ -19,7 +18,6 @@ const connection = mongoose.connection;
 connection.once('open', () => {
     console.log('Database Connected...');
 });
-
 
 //Session config
 
@@ -66,6 +64,6 @@ app.use(passport.session())
 
 
 
- app.listen(PORT, () => {
-    console.log(`Listening on port ${PORT}, http://localhost:3000/`)
+ app.listen(process.env.PORT || 3000,'0.0.0.0', () => {
+    console.log(`Listening on port ${process.env.PORT}, http://localhost:3000/`)
  })
