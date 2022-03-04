@@ -13,6 +13,9 @@
     "production": "mix --production",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "14.7.5"
+  },
   "dependencies": {
     "axios": "^0.24.0",
     "bcrypt": "^5.0.1",
