@@ -1,0 +1,20 @@
+[
+    {
+        "_id": {
+            "$oid":"5eee6692a27a66807cf2bea4"
+        },
+        "name": "Chained Ancient",
+        "description": "Guida alla creazione alla classe homebrew Chained Ancient",
+        "tags": "#Classi",
+        "linkspost": "https://t.me/DungeonsAndDragonsITA/2577"
+    },
+    {
+        "_id": {
+            "$oid":"5eee6692a27a66807cf2bea5"
+        },
+        "name": "Oggetti homebrew",
+        "description": "Un po' di oggetti homebrew.",
+        "tags": "#Items",
+        "linkspost": "https://t.me/DungeonsAndDragonsITA/2557"
+    }
+]

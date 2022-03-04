@@ -1,0 +1,35 @@
+<section class="section-home-dnd" >
+    <h1>D&D</h1>
+  </section>
+  <section class="section-two-dnd">
+    <h1>Dungeons and Dragons</h1>
+  
+    <p>Dungeons & Dragons è un gioco di ruolo fantasy creato da Gary Gygax e Dave Arneson. Il gioco nacque nell'ambiente del wargame negli anni settanta e la fonte di ispirazione furono le opere di Tolkien. 
+        In questa sezione troverete classi, razze, avventure, oggetti e molto altro homebrew. La maggiorparte saranno in inglese, però se vi fa piacere, potete donare una piccola cifra per il sostentamento del sito e per la traduzione del materiale.
+        Se avete materiale che volete condividere non esitate a contattarci. <br> <br> Visita il nostro canale Telegram: <a href="https://t.me/s/DungeonsAndDragonsITA"> @DungeonsAndDragonsITA</a>
+    </p>
+    <h1 class=" font-bold mb-8">Materiale Homebrew</h1>
+    <!--<div class="row-filter">
+        <div class="post-filter">
+            <button class="button_active" type="button" data-filter="Avventure">Avvnture</button>
+            <button type="button" data-filter="Classi">Classi</button>
+            <button type="button" data-filter="Razze">Razze</button>
+            <button type="button" data-filter="Oggetti">oggetti</button>
+        </div>
+    </div>-->
+    <div class="materiale boxes mx-auto py-8">
+        
+        <% postsDnd.forEach(function(post) { %>
+        <div class="box">
+            <div class="content post-item" data-category="<%= post.tags %>">
+                <h1> <%= post.name %> </h1>
+                <h2> #<%= post.tags %> </h2>
+                <p> <%= post.description %> </p>
+                <a href=" <%=  post.linkspost %> " class="box-btn">Vai al post</a>
+            </div>
+        </div>
+        <%  }) %>
+
+
+    </div>
+  </section>    

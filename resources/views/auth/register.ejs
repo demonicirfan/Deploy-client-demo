@@ -1,0 +1,38 @@
+<section class="login flex justify-center pt-24">
+    
+    <div class="w-full max-w-xs">
+        <form action="/register" method="POST" class="bg-white rounded px-8 pt-6 pb-8 mb-4">
+            <% if(messages.error) { %>
+            <span class="text-red-500 text-sm"><%= messages.error %></span>
+            <% } %>
+            <div class="mb-4">
+                <label for="name" value="<%= messages.name %>" class="block text-gray-700 text-sm font-bol mb-2">Nome</label>
+                <input name="name" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" placeholder="Nome">
+            </div>
+            <div class="mb-4">
+                <label for="usurname" class="block text-gray-700 text-sm font-bol mb-2">Cognome</label>
+                <input name="usurname" value="<%= messages.usurname %>" type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="usurname" placeholder="Cognome">
+            </div>
+            <!--<div class="mb-4">
+                <label for="city" class="block text-gray-700 text-sm font-bol mb-2">Città</label>
+                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="city" placeholder="Città">
+            </div>
+            <div class="mb-4">
+                <label for="provincia" class="block text-gray-700 text-sm font-bol mb-2">Provincia</label>
+                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="provincia" placeholder="Provincia">
+            </div>-->
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bol mb-2">E-mail</label>
+                <input name="email" value="<%= messages.email %>" type="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" placeholder="E-mail">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                <input name="password" type="password" id="password" placeholder="***********" class="shadow appearance-none borer rouned w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+            <div class="flex items-center justify-between">
+                <button type="submit" class="font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Registrati</button>
+            </div>
+            <a href="/login" class="inline-block align-baseline font-bold text-sm">Hai già un account?</a>
+        </form>
+    </div>
+</section>
